@@ -15,10 +15,13 @@ include_recipe 'fail2ban::default'
 include_recipe 'apt::default'
 
 #installs the JRE
-include_recipe 'java::default'
+#include_recipe 'java::default'
 
 # create application user
-include_recipe 'chef_scala_ephox::user'
+#include_recipe 'chef_scala_ephox::user'
 
 #create and then run the service
-include_recipe 'chef_scala_ephox::appserver'
+#include_recipe 'chef_scala_ephox::appserver'
+
+#run the docker container for the app
+include_recipe 'chef_scala_ephox::docker'

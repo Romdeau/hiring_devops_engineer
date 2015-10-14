@@ -5,5 +5,6 @@ cookbook 'java', '~> 1.35.0'
 cookbook 'openssh', '~> 1.5.2'
 cookbook 'firewall', '~> 1.5.0'
 cookbook 'fail2ban', '~> 2.3.0'
+cookbook 'docker', '~> 2.0.4'
 
 metadata

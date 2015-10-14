@@ -1,0 +1,15 @@
+# /etc/init/javaapp.conf
+description "Upstart Service to run docker container"
+author "Thomas Taege"
+
+start on (local-filesystems and net-device-up IFACE!=lo)
+stop on shutdown
+
+setuid root
+setgid root
+
+expect fork
+
+script
+   docker start ephox
+end script

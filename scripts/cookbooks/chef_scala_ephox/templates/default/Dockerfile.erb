@@ -1,0 +1,3 @@
+FROM java:7
+WORKDIR /application
+CMD java -jar <%= node['chef_scala_ephox']['app_name'] %>
